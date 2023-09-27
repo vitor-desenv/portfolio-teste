@@ -1,0 +1,218 @@
+body {
+    overflow: hidden;
+    background-image: url(kali-linux8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a janela */
+    background-attachment: fixed; /* Fixa a imagem de fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-color: #000000;
+}
+
+/* Mídia query para telas maiores, como computadores */
+@media (min-width: 768px) {
+    body {
+        background-size: 60vh; /* Remove o tamanho de capa, usa tamanho original */
+    }
+}
+
+/* Mídia query para telas menores, como celulares */
+@media (max-width: 800px) {
+    body {
+        background-size: 120%; /* Aumenta um pouco o tamanho da imagem para telas menores */
+    }
+}
+
+li {
+    padding-left: 8px;
+    list-style: none;
+    color: white;
+    display: inline-block;
+    font-size: 13px;
+}
+
+p { 
+    padding-bottom: 10px;
+    text-align: justify;
+    padding-top: 5px;
+    margin: 0;
+    color: white;
+    font-size: 14px;
+}
+
+.iconesLeft{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+#icons {
+    display: block;
+}
+
+button {
+    background-color: #00000074;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+#open-terminal:hover {
+    cursor: pointer;
+}
+
+#open-terminal2:hover {
+    cursor: pointer;
+}
+
+#blog {
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+
+hr {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    height: 1px; /* Adicione a altura da linha */
+    background-color: #262525d5; /* Defina a cor da linha */
+}
+
+h5 {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between; /* Alinhar itens horizontalmente */
+    align-items: center; /* Alinhar itens verticalmente */
+    padding: 0 0px; /* Adicione um espaçamento interno à header */
+}
+
+.close {
+    border: 1px solid #262525d5;
+    color: white;
+    cursor: pointer;
+    font-weight: bold; /* Adicione negrito ao texto "X" */
+}
+
+.close:hover {
+    border-color: red;
+    background-color: red;
+}
+
+/* Defina a largura e a cor do scrollbar */
+::-webkit-scrollbar {
+    width: 2px; /* Largura do scrollbar */
+}
+
+/* Defina a cor de fundo do scrollbar track */
+::-webkit-scrollbar-track {
+    background: #000000; /* Cor de fundo do scrollbar track */
+}
+
+/* Defina a cor do scrollbar thumb (a parte que você arrasta) */
+::-webkit-scrollbar-thumb {
+    background: #ff0000; /* Cor do scrollbar thumb */
+}
+
+#terminal-dialog{
+    margin-top: 100px;
+    border: 1px solid red;
+    background-color: #000000;
+    color: white;
+    width: 810px;
+    height: 350px;
+    padding: 0;
+    min-height: 450px;
+    min-width: 300px;
+}
+
+@media (max-width: 768px) {
+    #terminal-dialog {
+        width: 100%; /* Altere o tamanho para 100% em telas menores que 768px */
+    }
+}
+
+#blog {
+    margin-top: 10px;
+    width: 50%; /* 50% da largura do elemento pai */
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    #blog {
+        width: 100%; /* Altere o tamanho para 100% em telas menores que 768px */
+    }
+}
+
+input {
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+}
+
+/* Calculadora config */
+
+.calculadora{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    padding: 15px;
+}
+.botao{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 3px;
+    background-color: rgb(31,31,31);
+    border: none;
+    color: #fff;
+}
+.botao:hover{
+    background-color: red;
+}
+#resultado{
+    background-color: white;
+    width: 207px;
+    height: 30px;
+    margin: 5px;
+    font-size: 25px;
+    color: black;
+    text-align: right;
+    padding: 5px;
+}
+
+#terminal-dialog2 {
+    background-color: rgb(0, 0, 0);
+    border: 1px solid red;
+    width: 240px;
+    height: 410px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 95%;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+.linhaFooter {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    color: gray;
+}
